@@ -37,5 +37,5 @@ def autolabel(rects):
 
 autolabel(rects1)
 autolabel(rects2)
-fig.tight_layout()
+fig.tight_layout() #调整显示布局格式的
 plt.show()
