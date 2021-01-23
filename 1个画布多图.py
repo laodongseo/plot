@@ -29,8 +29,8 @@ def autolabel(rects):
         print(rect)
         height = rect.get_height()
         ax.annotate(f'{height}',
-                    xy=(rect.get_x() + rect.get_width() / 2, height),
-                    xytext=(0, 3),  # 3 points vertical offset
+                    xy=(rect.get_x() + rect.get_width() / 2, height), # 文本位置的坐标
+                    xytext=(0, 3),  # 3 points vertical offset 垂直偏移
                     textcoords="offset points",
                     ha='center', va='bottom')
 
