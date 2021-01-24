@@ -19,7 +19,7 @@ rects2 = ax.bar(x + width/2, women_means, width, label='Women')
 ax.set_ylabel('Scores')
 ax.set_title('Scores by group and gender')
 ax.set_xticks(x)
-ax.set_xticklabels(labels)
+ax.set_xticklabels(labels) # x轴的数据
 ax.legend()
 
 
