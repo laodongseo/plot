@@ -13,7 +13,7 @@ ax.set(title='5i5j.com及竞品top1——10排名分布')
 # 添加数据标签
 for rect in ax.patches:
     height = int(rect.get_height())
-    ax.annotate('{}'.format(height),
+    ax.annotate('{}%'.format(height),
                 xy=(rect.get_x() + rect.get_width() / 2, height),
                 xytext=(0, 0.2),  # 3 points vertical offset
                 textcoords="offset points",
