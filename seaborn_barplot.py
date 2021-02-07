@@ -20,7 +20,7 @@ def draw_pic(x_col,y_col,hue_col,df_,title,pic_name):
 	                textcoords="offset points",
 	                ha='center', va='bottom')
 	# plt.show()
-	plt.figure() # 连续保存多个图片用
+	plt.figure() # 连续保存多个图片用否则会错乱
 	fig = ax.get_figure()
 	ax.figure.savefig(f'{save_path}{pic_name}.png')
 	# plt.savefig(f'{save_path}{pic_name}.png')
