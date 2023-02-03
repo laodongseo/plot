@@ -1,0 +1,32 @@
+https://blog.csdn.net/u013180339/article/details/77094725
+https://www.cnblogs.com/shanger/p/13191489.html
+https://www.jianshu.com/p/d52132ab9ccc/
+https://www.cnblogs.com/shanger/p/13186918.html
+
+
+
+
+1、如何创建figure和ax
+	fig = plt.figure()  # an empty figure with no Axes
+	fig, ax = plt.subplots()  # a figure with a single Axes
+	fig, axes = plt.subplots(nrows=2, ncols=2,figsize=(5, 2.7))  # a figure with a 2x2 grid of Axes
+	ax_1 = axes[0,0]
+
+	ax = plt.subplot()
+	axes = fig.subplots()
+	matplotlib.axes
+
+2、设置figure的大小
+	fig.dpi = 80 # 每英尺多少像素
+	fig.set_size_inches(10,10) # 尺寸英尺
+	在show之后设置dpi和size就不行了
+
+	fig = plt.figure(figsize=(10,10),dpi=80)
+
+3、figure和对ax的增删改查，ax获取当前figure
+	fig = plt.figure(figsize=(10,10),dpi=80)
+	ax=fig.add_axes([0,0,1,1]) # 左下角0,0的位置,宽和高分别是1,1
+
+
+4、如何创建patches
+5、ax对patches的增删改查
